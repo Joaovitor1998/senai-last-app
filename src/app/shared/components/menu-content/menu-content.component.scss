@@ -1,0 +1,27 @@
+.menu-layer {
+    background-color: var(--menu-content-layer-bg);
+    z-index: 4;
+
+    .menu-content {
+        width: 15%;
+        background-color: var(--menu-content-bg);
+    }
+
+    a{
+        text-decoration: none;
+        background-color: var(--menu-content-link-bg);
+        color: var(--menu-content-link-color);
+        font-weight: bolder;
+    
+        &:hover{
+            background-color: var(--menu-content-link-hover-bg);
+        }
+    }
+    
+    .active-link {
+        border-left: 3px solid var(--menu-content-active-link-color);
+    }
+}
+
+
+

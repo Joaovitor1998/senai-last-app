@@ -1,0 +1,37 @@
+<div class="menu-bar pt-1 d-flex justify-content-between">
+
+    <div class="icon ml-2">
+        <i 
+            class="material-icons" 
+            (click)="showMenuContent()">menu</i>
+    </div>
+
+    <div class="icon position-relative mr-2">
+
+        <i 
+            class="material-icons" 
+            (click)="showUserDetails()">person</i>
+
+        <div 
+            *ngIf="canShowUserDetails" 
+            class="user-details position-absolute">
+
+            <div class="d-flex align-items-middle p-2">
+
+                <i class="material-icons mx-2 text-black">person</i>
+                <h5>
+                    {{ (user$ | async)?.username }}
+                </h5>
+                
+            </div>
+
+            <p class="d-block border border-white"></p>
+
+            <div class="p-2 mx-2">
+                <p (click)="logout()">Logout</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>

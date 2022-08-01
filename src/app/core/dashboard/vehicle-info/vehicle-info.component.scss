@@ -1,0 +1,14 @@
+thead, tfoot {
+    background-color: var(--primary-color);
+}
+th{
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+}
+tbody td{
+    padding: 7px;
+    text-align: center;
+    font-weight: bolder;
+}

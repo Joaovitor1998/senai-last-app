@@ -1,0 +1,42 @@
+i{
+    cursor: pointer;
+}
+
+.menu-bar {
+    background-color: var(--menu-bar-bg);
+}
+
+.user-details{
+    width: 200px;
+    margin-top: 7px;
+    right: 5px;
+    z-index: 4;
+    background-color: var(--menu-bar-layer-bg);
+    color: var(--menu-bar-layer-color) !important;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -10px;
+        border: 8px solid transparent;
+        border-top: none;
+        border-bottom: 10px solid var(--menu-bar-layer-bg);
+    }
+
+    div p {
+        cursor: pointer;
+    }
+
+}
+
+.icon {
+    margin: 0 10px;
+    
+}
+
+i {
+    border: 1px solid var(--primary-color);
+    padding: 2px;
+    border-radius: 50%;
+}

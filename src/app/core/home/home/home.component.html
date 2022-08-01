@@ -1,0 +1,28 @@
+<div>
+
+    <div class="position-fixed w-75 top-50 start-50 translate-middle">
+
+        <img 
+            [src]="homeImage"
+            alt="Home image" 
+            class="image-fluid w-100">
+
+    </div>
+
+    <div class="info-box container w-50 h-75 position-fixed top-50 start-50 translate-middle p-0">
+
+        <div class="header opacity-100 border-bottom border-dark p-2">
+
+            <h4>Sistema de dados FORD</h4>
+
+        </div>
+
+        <div class="body mt-4 p-2">
+
+            <h4>Seja bem-vindo(a), {{ (user$ | async)?.username}}!</h4>
+            
+        </div>
+
+    </div>
+
+</div>

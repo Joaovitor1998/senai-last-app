@@ -1,0 +1,48 @@
+<div 
+    (click)="closeContent($event, menuContent)" 
+    class="menu-layer position-absolute top-0 left-0 w-100 h-100">
+
+    <div #menuContent class="menu-content position-absolute start-0 top-0 h-100">
+
+        <div class="logo-image my-5 mt-3 mb-5">
+
+            <img 
+            [src]="logoImage" 
+            alt="Menu logo" 
+            class="w-75 mx-auto d-block">
+
+        </div>
+
+
+        <!-- MENU LINKS -->
+        <div class="link">
+            <a 
+                routerLink="" 
+                routerLinkActive="active-link" 
+                [routerLinkActiveOptions]="{exact:true}" 
+                class="p-3 d-block">Home</a>
+        </div>
+
+        <div class="link">
+            <a 
+                [routerLink]="'/dashboard'" 
+                routerLinkActive="active-link" 
+                [routerLinkActiveOptions]="{exact:true}" 
+                class="p-3 d-block">Dashboard</a>
+        </div>
+
+        <div 
+            class="link" 
+            *ngIf="hasPermission">
+            
+            <a 
+                [routerLink]="'/admin'" 
+                routerLinkActive="active-link" 
+                [routerLinkActiveOptions]="{exact:true}" 
+                class="p-3 d-block">Admin</a>
+
+        </div>
+        
+    </div>
+
+</div>

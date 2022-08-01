@@ -1,0 +1,42 @@
+<table class="w-100">
+
+  <thead>
+      <tr>
+          <th>Código - Vin</th>
+          <th>Odômetro</th>
+          <th>Gasolina</th>
+          <th>Pneus</th>
+          <th>Status</th>
+          <th>Bateria</th>
+          <th>Lat.</th>
+          <th>Long.</th>
+      </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+          <td>{{ vehicleData.vinCode }}</td>
+          <td>{{ vehicleData.odometer }} km</td>
+          <td>{{ vehicleData.fuelLevel }}</td>
+          <td>{{ vehicleData.tirePressure }}</td>
+          <td>{{ vehicleData.vehicleStatus }}</td>
+          <td>{{ vehicleData.batteryStatus }}</td>
+          <td>{{ vehicleData.lat }}</td>
+          <td>{{ vehicleData.lon}}</td>
+      </tr>
+  </tbody>
+
+  <tfoot>
+      <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+      </tr>
+  </tfoot>
+
+</table>

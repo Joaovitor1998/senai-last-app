@@ -1,4 +1,8 @@
+import { TokenService } from './authentication/services/token.service';
+import { UserInfo } from 'src/app/shared/models/user-info';
+import { UserService } from './authentication/services/user.service';
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'senai-dashboard';
+  
+  hasAnyToken : Observable<UserInfo> = this.userService.getUser();
+
+  constructor(private userService: UserService) {}
+
+
 }

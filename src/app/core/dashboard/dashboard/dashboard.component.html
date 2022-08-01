@@ -1,0 +1,30 @@
+<div class="wrapper fixed-top mt-5">
+
+    <!-- DASHBOARD HEADER - DESCRIPTION AND BUTTON FOR ADMINS -->
+    <div class="header p-1 mb-3 position-relative">
+
+        <h1 class="text-center">Dashboard FORD</h1>
+        <button 
+            class="position-absolute end-0 top-50 translate-middle btn btn-primary d-flex justify-content-around align-items-center" 
+            *ngIf="isAdmin" 
+            (click)="createNewVehicle()">
+            Novo
+            <i class="material-icons mx-2">add_circle</i>
+        </button>
+   
+    </div>
+
+    <!-- DASHBOARD TOP CONTENT - VEHICLE BOXES  -->
+    <app-vehicle-boxes-wrapper class="top-content d-flex justify-content-around"></app-vehicle-boxes-wrapper>
+
+    <!-- DASHBOARD MIDDLE CONTENT - IMAGE AND GRAPHS -->
+    <app-image-graphs-holder></app-image-graphs-holder>
+
+    <!-- DASHBOARD BOTTOM CONTENT - VEHICLE DATA TABLE -->
+    <div class="bottom-content fixed-bottom">
+
+        <app-vehicle-info></app-vehicle-info>
+
+    </div>
+
+</div>

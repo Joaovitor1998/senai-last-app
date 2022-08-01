@@ -1,0 +1,15 @@
+<div class="middle-content position-fixed d-flex justify-content-around align-items-center mt-2">
+
+  <app-image-holder class="w-50 h-100"></app-image-holder>
+
+  <app-donut-graph 
+    [title]="'Conectados'" 
+    [value]="connectedVehiclePercentage">
+  </app-donut-graph>
+
+  <app-donut-graph 
+    [title]="'Software Updates'" 
+    [value]="softwareUpdatePercentage">
+  </app-donut-graph>
+
+</div>

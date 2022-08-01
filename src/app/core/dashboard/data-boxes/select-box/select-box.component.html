@@ -1,0 +1,30 @@
+<div class="dashboard-box">
+
+  <div class="header p-2 border-bottom border-gray">
+
+      <h4>{{ dataTitle }}</h4>
+
+  </div>
+
+  <div class="body p-4 d-flex align-items-center">
+
+      <div class="w-100">
+
+          <select name="carSelect" id="car-select" class="form-select" [formControl]="vehicleOptions">
+
+              <option 
+                  [disabled]="true">Selecione um Veículo
+                </option>
+
+              <option 
+                  *ngFor="let vehicle of vehicleList"    
+                  [value]="vehicle.id">{{ vehicle.model }}
+              </option>
+
+          </select>
+
+      </div>
+
+  </div>
+
+</div>

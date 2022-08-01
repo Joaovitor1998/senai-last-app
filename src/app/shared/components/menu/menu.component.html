@@ -1,0 +1,8 @@
+<app-menu-bar 
+    (showMenuContentEmitter)="showMenuContent($event)">
+</app-menu-bar>
+
+<app-menu-content 
+    *ngIf="canShowContent" 
+    (showMenuContentEmitter)="showMenuContent($event)">
+</app-menu-content>

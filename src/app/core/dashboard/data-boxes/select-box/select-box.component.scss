@@ -1,0 +1,22 @@
+.dashboard-box {
+    border: 1px solid var(--default-border);
+    width: var(--dashboard-box-width);
+    
+    .body {
+        height: var(--dashboard-box-height);
+        
+        h2 {
+            color: var(--primary-color);
+        }
+    }
+    
+    .header {
+        background-color: rgba(236, 236, 236, 0.445);
+        
+        h4 {
+            margin-left: 15px;
+            color: var(--custom-gray);
+        }
+    }
+}
+

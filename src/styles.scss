@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+
+    // COMMON
+
+    --primary-color: #00095b;
+    --secondary-color: #2394d1;
+    --default-border: var(--custom-gray);
+    --custom-gray: #4e4e4e;
+
+    // MENU CONTENT
+    --menu-content-layer-bg: rgba(0, 0, 0, 0.6);
+    --menu-content-bg: #ffffff;
+    --menu-content-link-bg: rgba(236, 236, 236, 0.596);
+    --menu-content-link-hover-bg: rgba(236, 236, 236, 0.9);
+    --menu-content-link-color: var(--secondary-color);
+    --menu-content-active-link-color: var(--primary-color);
+
+    // MENU BAR
+    --menu-bar-bg: rgba(236, 236, 236, 0.596);
+    --menu-bar-layer-bg: rgba(129, 124, 124, 0.452);
+    --menu-bar-layer-color: #fff !important;
+
+    // DASHBOARD
+    --dashboard-box-width: 250px;
+    --dashboard-box-height: 120px;
+
+    // HOME
+    --home-box-bg: rgba(255, 255, 255, 0.85);
+    // --home-box-border: var(--primary-color);
+    --home-box-header-color: var(--custom-gray);
+    --home-box-body-color: var(--secondary-color);
+
+
+
+}
+
+h1, h2, h3, h4, h5, h6, p, button{
+    color: var(--primary-color);
+}
+
+body {
+    height: 100%;
+    width: 100;
+}
