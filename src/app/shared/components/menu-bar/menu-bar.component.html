@@ -14,12 +14,12 @@
 
         <div 
             *ngIf="canShowUserDetails" 
-            class="user-details position-absolute">
+            class="user-details position-absolute text-white">
 
             <div class="d-flex align-items-middle p-2">
 
-                <i class="material-icons mx-2 text-black">person</i>
-                <h5>
+                <i class="material-icons mx-2">person</i>
+                <h5 class="text-white">
                     {{ (user$ | async)?.username }}
                 </h5>
                 

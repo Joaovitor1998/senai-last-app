@@ -18,8 +18,8 @@
 
     // MENU BAR
     --menu-bar-bg: rgba(236, 236, 236, 0.596);
-    --menu-bar-layer-bg: rgba(129, 124, 124, 0.452);
-    --menu-bar-layer-color: #fff !important;
+    --menu-bar-layer-bg: rgba(0, 0, 0, 0.582);
+    --menu-bar-layer-color: #fff;
 
     // DASHBOARD
     --dashboard-box-width: 250px;
@@ -27,7 +27,6 @@
 
     // HOME
     --home-box-bg: rgba(255, 255, 255, 0.85);
-    // --home-box-border: var(--primary-color);
     --home-box-header-color: var(--custom-gray);
     --home-box-body-color: var(--secondary-color);
 

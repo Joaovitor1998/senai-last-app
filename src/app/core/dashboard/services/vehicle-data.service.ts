@@ -2,7 +2,7 @@ import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { VehicleData } from 'src/app/shared/models/vehicle-data';
+import { VehicleData, VehiclesData } from 'src/app/shared/models/vehicle-data';
 
 const API = environment.apiUrl;
 const ENDPOINT = "vehiclesData";
@@ -16,6 +16,9 @@ export class VehicleDataService {
 
   constructor(private httpClient: HttpClient) { }
 
+  listAll() {
+    return this.httpClient.get<VehiclesData>(`${API}/${ENDPOINT}`);
+  }
 
   setVehicleData(id: string | number): void {
     this.httpClient.get<VehicleData>(`${API}/${ENDPOINT}/${id}`).subscribe(
